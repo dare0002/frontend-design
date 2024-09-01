@@ -1,4 +1,14 @@
-article {
+/* article {
     max-width: 65ch;
     margin-inline: auto;
+} */
+
+article {
+    --gap: clamp (1rem, 6vw, 3rem);
+    --full: minmax (var(--gap), 1fr);
+    --content: 65ch; 
+
+    display: grid; 
+    grid-template-columns: 
+        [full-start] var (--full) 
 }
