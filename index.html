@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code in the Dark 1</title>
-    <link rel="stylesheet" href="./assets/global.css" />
-  </head>
-  <body>
-    <!-- Begynd herunder -->
-    <h1>Hello</h1>
-    <!-- Overlay -->
-    <div data-overlay>
-      <img src="./assets/image.png" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code in the Dark 1</title>
+  <link rel="stylesheet" href="./assets/global.css" />
+</head>
+
+<body>
+  <!-- Begynd herunder -->
+  <div class="container">
+    <div class="card">
+      <div class="card_img">
+        <img src="profile.png" alt="Cassidy Williams">
+      </div>
     </div>
-  </body>
+    <div class="info">
+      <h1 class="name">Cassidy Williams</h1>
+      <h2 class="title">CTO at Contenda</h2>
+      <div class="icons">
+        <svg>
+          <use href="icons.svg#mastodon" width="25" height="25" />
+        </svg>
+        <svg>
+          <use href="icons.svg#github" width="25" height="25" />
+        </svg>
+        <svg>
+          <use href="icons.svg#website" width="25" height="25" />
+        </svg>
+        <svg>
+          <use href="icons.svg#twitter" width="25" height="25" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- Overlay -->
+  <div data-overlay>
+    <img src="./assets/image.png" alt="" />
+  </div>
+</body>
+
 </html>

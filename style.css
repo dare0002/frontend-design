@@ -9,8 +9,59 @@
     --font-heading: 1.75rem;
 
     /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+    --hide-overlay: 1;
 }
 
 
 /* Begynd her... */
+
+html, body {
+    background: #E3EDFB;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+}
+
+.card {
+    display: flex;
+    align-items: center; 
+    padding: var(--card-padding); 
+    width: 100%;
+}
+
+.card_img {
+    width: var(--image-width);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.info {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.name {
+    font-size: var(--font-heading);
+    line-height: 1.7;
+}
+
+.title {
+    color: #4caf50;
+    line-height: 1.7;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
